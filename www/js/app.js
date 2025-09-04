@@ -94,3 +94,13 @@ window.addEventListener('storage', ()=>{
   populateSelect();
   buildFieldsForModelo(sel.value);
 });
+// Para cada placeholder detectado
+placeholders.forEach(ph => {
+    const nomeInput = config[ph]?.nome || ph;
+    const tipoInput = config[ph]?.tipo || 'text';
+    
+    const inp = document.createElement('input');
+    inp.name = nomeInput;
+    inp.type = tipoInput;
+    form.appendChild(inp);
+});
