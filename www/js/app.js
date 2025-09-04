@@ -1,9 +1,9 @@
 
 const DEFAULT_MODELOS = {
   "Art 303 - Lesão Corporal": `TRATA-SE DO ART 303 DO CTB - PRATICAR LESÃO CORPORAL CULPOSA NA DIREÇÃO DE VEÍCULO AUTOMOTOR:\n\nNO DIA {data} NO KM {km} DA {via}, OCORREU UM SINISTRO DE TRANSITO COM LESÕES CORPORAIS, DO TIPO {tipo}. OS VEICULOS ENVOLVIDOS FORAM MARCA/MODELO/PLACA CONDUZIDO POR {nome1}/RG: {rg1} E MARCA/MODELO/PLACA CONDUZIDO POR {nome2}/RG: {rg2}. COM BASE NA ANALISE E VESTIGIOS IDENTIFICADOS CONSTATOU-SE A SEGUINTE SEQUÊNCIA: O VEICULO MARCA/MODELO TRAFEGAVA SENTIDO {sentido1} A {sentido2} QUANDO TEVE SUA FRENTE OBSTRUIDA PELO VEICULO MARCA/MODELO QUE TRAFEGAVA NO MESMO SENTIDO E IA REALIZAR MANOBRA DE RETORNO, MAS NÃO PAROU A DIREITA CONFORME PREVÊ A LEGISLAÇÃO. RESTARAM LESIONADOS O CONDUTOR E PASSAGEIRO DO VEICULO MARCA/MODELO E FORAM SOCORRIDOS PELO SAMU PARA O HOSPITAL LOCAL. FORAM REALIZADOS OS TESTES DE ETILOMETRO NOS CONDUTORES RESTADO {etilometro} EM AMBOS. OS VEICULOS FORAM RESTITUIDOS. DEMAIS INFORMAÇÕES: {demais}`,
-  "Art 310 - Direção Não Habilitada": `TRATA-SE DO ART 310 DO CTB - PERMITIR, CONFIAR OU ENTREGAR A DIREÇÃO A PESSOA NÃO HABILITADA...\n\nNO DIA {data}, POR VOLTA DAS {hora}, NO KM {km} DA {via}, OCORREU UM SINISTRO DO TIPO {tipo}. OS VEICULOS ENVOLVIDOS FORAM: {veiculos}. RELATO: {relato}. MEDIDAS TOMADAS: {medidas}.`,
-  "Histórico BOAT": `No dia {data}, por volta das {hora}, no km {km} da {via}, em {municipio}-{uf}, ocorreu um sinistro do tipo {tipo}, com {vitimas} vitima(s). Os veículos envolvidos foram: {veiculos}. Com base na análise dos vestígios identificados e relatos, constatou-se: {conclusoes}.`,
-  "Release Padrão": `FATO: {descricao}\nCRBM/3º BRBM/GRv TORRES\nData/Hora: {data} – {hora}\nLocal: {local}\nVeículo: {veiculo}\nVítima(s): {vitimas}\nResumo: {resumo}`
+  "Art 310 - Direção Não Habilitada": `TRATA-SE DO ART 310 DO CTB - PERMITIR, CONFIAR OU ENTREGAR A DIREÇÃO A PESSOA NÃO HABILITADA...\n\nNO DIA {data}, NO KM {km} DA {via}, OCORREU UM SINISTRO DO TIPO {tipo}. OS VEICULOS ENVOLVIDOS FORAM: {veiculos}. RELATO: {relato}. MEDIDAS TOMADAS: {medidas}.`,
+  "Histórico BOAT": `No dia {data}, no km {km} da {via}, em {municipio}-{uf}, ocorreu um sinistro do tipo {tipo}, com {vitimas} vitima(s). Os veículos envolvidos foram: {veiculos}. Com base na análise dos vestígios identificados e relatos, constatou-se: {conclusoes}.`,
+  "Release Padrão": `FATO: {descricao}\nCRBM/3º BRBM/GRv TORRES\nData/Hora: {data} – \nLocal: {local}\nVeículo: \nVítima(s): {vitimas}\nResumo: {resumo}`
 };
 
 function loadModelos(){ 
