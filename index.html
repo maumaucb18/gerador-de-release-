@@ -5,17 +5,17 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 <title>Gerador de release de ocorrencias</title>
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="www\manifest.json">
 <meta name="theme-color" content="#FFD54F">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="www\css\style.css">
 </head>
 <body>
 <header class="topbar">
   <div class="brand">
-    <img src="icons/icon-192.png" alt="ícone" class="logo">
+    <img src="www\icons\icon-192.png" alt="ícone" class="logo">
     <h1>Gerador de Releases</h1>
   </div>
-  <a class="manage" href="modelos.html">Gerenciar</a>
+  <a class="manage" href="www\modelos.html">Gerenciar</a>
 </header>
 
 <main class="main">
@@ -48,10 +48,10 @@
 
 <footer class="footer">App criado por mauricio pignoli.</footer>
 
-<script src="js/app.js"></script>
+<script src="www\js\app.js"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').catch(function(e){ console.log('SW fail', e); });
+    navigator.serviceWorker.register('www\sw.js').catch(function(e){ console.log('SW fail', e); });
   }
 </script>
 </body>
