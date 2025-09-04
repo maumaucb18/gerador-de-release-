@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Gerenciar Modelos</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#FFD54F">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <img src="icons/icon-192.png" alt="ícone" class="logo">
+    <h1>Gerenciar Modelos</h1>
+  </div>
+  <a class="manage" href="index.html">Voltar</a>
+</header>
+
+<main class="main">
+  <section class="card">
+    <h2>Modelos</h2>
+    <div id="lista"></div>
+
+    <h3>Adicionar / Atualizar modelo</h3>
+    <label for="novo-titulo">Título</label>
+    <input id="novo-titulo" placeholder="Ex: Art 303 - Lesão Corporal">
+    <label for="novo-texto">Texto (use {campo} para placeholders)</label>
+    <textarea id="novo-texto" rows="6" placeholder="Digite o modelo..."></textarea>
+    <div class="row">
+      <button id="adicionar" class="btn primary">Salvar</button>
+      <button id="resetar" class="btn ghost">Restaurar Padrões</button>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">Salvo localmente • PWA offline</footer>
+
+<script src="js/modelos.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Gerador WhatsApp — PWA Offline</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#FFD54F">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <img src="icons/icon-192.png" alt="ícone" class="logo">
+    <h1>Gerador de Textos</h1>
+  </div>
+  <a class="manage" href="modelos.html">Gerenciar</a>
+</header>
+
+<main class="main">
+  <section class="card">
+    <label for="modelo">Modelo</label>
+    <select id="modelo" aria-label="Selecionar modelo"></select>
+
+    <div id="campos" class="fields"></div>
+
+    <div class="row">
+      <button id="gerar" class="btn primary">Gerar Texto</button>
+      <button id="copiar" class="btn">Copiar</button>
+      <button id="limpar" class="btn ghost">Limpar</button>
+    </div>
+
+    <label for="texto-final">Pré-visualização</label>
+    <textarea id="texto-final" readonly></textarea>
+  </section>
+
+  <section class="card tips">
+    <h3>Dicas rápidas</h3>
+    <ul>
+      <li>Toque em <strong>Gerar Texto</strong> para gerar o release.</li>
+      <li>Use o botão <strong>Copiar</strong> para copiar para área de transferência.</li>
+      <li>Para adicionar ou editar modelos, toque em <strong>Gerenciar</strong>.</li>
+      <li>Instale o app no celular: no navegador escolha "Adicionar à tela inicial".</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">App criado por mauricio pignoli.</footer>
+
+<script src="js/app.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').catch(function(e){ console.log('SW fail', e); });
+  }
+</script>
+</body>
+</html>
